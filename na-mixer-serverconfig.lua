@@ -7,8 +7,8 @@ ServerSettings.GameSettingMode = ServerSettings.GameSettingModes.OOTB
 ServerSettings.TeamAssignType = TeamAssignTypes.Unbalanced
 ServerSettings.AutoBalanceTeams	= false
 
-ServerSettings.Password = "###############"
-Admin.Roles.add("admin", "###############", true)
+ServerSettings.Password = "###"
+Admin.Roles.add("admin", "###", true)
 
 
 ServerSettings.MutuallyExclusiveItems.add("Light", "BXT1", "Light", "Thrust Pack")
@@ -40,6 +40,7 @@ ServerSettings.BeowulfLimit = 0
 -- Classes.setProperty("Light", Classes.Properties.HealthPool, 1000) (default)
 Items.setProperty("Heavy", "Heavy Spinfusor", Items.Properties.Damage, 800)
 Items.setProperty("Heavy", "Heavy Blinksfusor", Items.Properties.Damage, 800)
+Items.setProperty("Heavy", "Heavy Bolt Launcher", Items.Properties.Damage, 800)
 
 Classes.setProperty("Medium", Classes.Properties.EnergyPool, 110)
 -- this settings does not work
