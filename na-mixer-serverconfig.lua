@@ -8,8 +8,23 @@ ServerSettings.TeamAssignType = TeamAssignTypes.Unbalanced
 ServerSettings.AutoBalanceTeams	= false
 
 ServerSettings.Password = "###"
-Admin.Roles.add("admin", "###", true)
 
+require("admin")
+
+local roles = {
+    {
+        name     = "admin",
+        password = "###", -- <<< Set the password!
+        commands = {"NextMap", "NextMapName", "StartMap", "EndMap"},
+        canLua   = true, -- Admin can execute arbitrary Lua!
+    },
+    {
+        name     = "mod",
+        password = "###", -- <<< Set the password!
+        commands = {"NextMap", "NextMapName", "StartMap", "EndMap"},
+        canLua   = false,
+    },
+}
 
 ServerSettings.MutuallyExclusiveItems.add("Light", "BXT1", "Light", "Thrust Pack")
 ServerSettings.MutuallyExclusiveItems.add("Light", "BXT1A", "Light", "Thrust Pack")
