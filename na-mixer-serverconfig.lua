@@ -26,6 +26,9 @@ local roles = {
     },
 }
 
+-- To set up admin / moderator roles, uncomment above
+doSetupRoles(roles)
+
 ServerSettings.MutuallyExclusiveItems.add("Light", "BXT1", "Light", "Thrust Pack")
 ServerSettings.MutuallyExclusiveItems.add("Light", "BXT1A", "Light", "Thrust Pack")
 ServerSettings.MutuallyExclusiveItems.add("Light", "Phase Rifle", "Light", "Thrust Pack")
@@ -56,6 +59,9 @@ ServerSettings.BeowulfLimit = 0
 Items.setProperty("Heavy", "Heavy Spinfusor", Items.Properties.Damage, 800)
 Items.setProperty("Heavy", "Heavy Blinksfusor", Items.Properties.Damage, 800)
 Items.setProperty("Heavy", "Heavy Bolt Launcher", Items.Properties.Damage, 800)
+
+-- Bolt Launcher does 750 damage. 600 * 1.25 DirectHitMultiplier = 750
+Items.setProperty("Light", "Bolt Launcher", Items.Properties.Damage, 600)
 
 Classes.setProperty("Medium", Classes.Properties.EnergyPool, 110)
 -- this settings does not work
