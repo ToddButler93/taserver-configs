@@ -4,6 +4,7 @@ ServerSettings.GameSettingMode = ServerSettings.GameSettingModes.OOTB
 
 ServerSettings.FriendlyFire = true
 
+require("admin")
 local roles = {
     {
         name     = "admin",
