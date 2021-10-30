@@ -85,6 +85,7 @@ ServerSettings.MapRotation.add(Maps.CTF.Stonehenge)
 ServerSettings.MapRotation.add(Maps.CTF.Sunstar)
 ServerSettings.MapRotation.add(Maps.CTF.Tartarus)
 ServerSettings.MapRotation.add(Maps.CTF.TempleRuins)
+ServerSettings.MapRotation.add(Maps.CTF.Terminus)
 
 ServerSettings.MapRotation.add(Maps.Blitz.Drydock)
 ServerSettings.MapRotation.add(Maps.Blitz.ArxNovena)
