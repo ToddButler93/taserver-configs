@@ -11,6 +11,12 @@ local roles = {
         name     = "admin",
         password = "###", -- <<< Set the password!
         commands = {"NextMap", "NextMapName", "StartMap", "EndMap"},
+        canLua   = true,
+    },
+    {
+        name     = "mod",
+        password = "###", -- <<< Set the password!
+        commands = {"NextMap", "NextMapName", "StartMap", "EndMap"},
         canLua   = false,
     },
 }
