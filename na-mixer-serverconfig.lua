@@ -63,6 +63,9 @@ Items.setProperty("Heavy", "Heavy Bolt Launcher", Items.Properties.Damage, 800)
 -- Bolt Launcher does 750 damage. 600 * 1.25 DirectHitMultiplier = 750
 Items.setProperty("Light", "Bolt Launcher", Items.Properties.Damage, 600)
 
+-- Shocklance now does 500 damage, 1000 on backlance. 
+Items.setProperty("Light", "Shocklance", Items.Properties.Damage, 500)
+
 Classes.setProperty("Medium", Classes.Properties.EnergyPool, 110)
 -- this settings does not work
 ServerSettings.HeavyCountLimit = 3
